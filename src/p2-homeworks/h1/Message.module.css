@@ -1,0 +1,37 @@
+.all {
+    display: flex;
+}
+
+.block {
+    background: deepskyblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 65px;
+    border-radius: 5%;
+}
+.block::after {
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 55px;
+    border: 3px solid transparent;
+    border-right: 20px solid deepskyblue;
+}
+
+.ava {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 25px;
+    padding-top: 10px;
+}
+
+.message {
+    color: white;
+}
+
+.time {
+    padding-left: 115px;
+    opacity: 0.50;
+}
